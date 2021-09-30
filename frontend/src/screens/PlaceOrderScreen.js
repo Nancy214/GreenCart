@@ -30,6 +30,7 @@ const PlaceOrderScreen = ({ history }) => {
     if (success) {
       history.push(`/order/${order._id}`)
     }
+    // eslint-disable-next-line
   }, [success, history])
 
   const placeOrderHandler = () => {
@@ -132,6 +133,9 @@ const PlaceOrderScreen = ({ history }) => {
                   <Col>Total</Col>
                   <Col>&#8377; {cart.totalPrice}</Col>
                 </Row>
+              </ListGroup.Item>
+              <ListGroup.Item>
+                {error && <Message variant='danger'>{error}</Message>}
               </ListGroup.Item>
               <ListGroup.Item>
                 <Button
