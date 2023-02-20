@@ -1,6 +1,9 @@
 {
   "name": "greencart",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.19.0"
+  },
   "description": "MERN eCommerce App",
   "main": "server.js",
   "type": "module",
